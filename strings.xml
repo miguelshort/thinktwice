@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">thinktwice</string>
+    <string name="guard_description">thinktwice usa este servicio solo para saber qué aplicación se abre y mostrar encima una pausa o un aviso de bloqueo que tú has configurado. No lee mensajes, contenido ni texto de otras aplicaciones y no es una herramienta de accesibilidad para personas con discapacidad. Puedes desactivarlo cuando quieras.</string>
+</resources>

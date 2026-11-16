@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Solo eventos de cambio de ventana (para saber qué app pasa a primer plano).
+  canRetrieveWindowContent="false": el servicio NO puede leer el contenido de la pantalla.
+  isAccessibilityTool="false": thinktwice no es una herramienta de accesibilidad para discapacidad.
+-->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityEventTypes="typeWindowStateChanged"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:accessibilityFlags="flagDefault"
+    android:canRetrieveWindowContent="false"
+    android:isAccessibilityTool="false"
+    android:notificationTimeout="100"
+    android:description="@string/guard_description" />
