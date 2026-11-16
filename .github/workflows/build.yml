@@ -42,4 +42,10 @@ jobs:
           name: thinktwice-apk
           path: app/build/outputs/apk/debug/app-debug.apk
 
-      - name: Publicar en Releases (enlace
+      - name: Publicar en Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp app/build/outputs/apk/debug/app-debug.apk thinktwice.apk
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest thinktwice.apk --title "thinktwice (ultima compilacion)" --notes "APK de depuracion de thinktwice"
